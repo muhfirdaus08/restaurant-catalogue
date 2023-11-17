@@ -537,7 +537,6 @@ main {
   cursor: pointer;
   transition: background-color 0.3s;
   height: 44px;
-  
 }
 
 #review-form button[type='submit']:hover {

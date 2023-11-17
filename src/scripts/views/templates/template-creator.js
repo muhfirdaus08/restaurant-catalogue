@@ -8,7 +8,7 @@ import {
 
 const createRestaurantDetailTemplate = (restaurant) => `
   <h2 class="movie__title">${restaurant.name}</h2>
-  <img crossorigin="anonymous" class="movie__poster lazyload" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" />
+  <img crossorigin="anonymous" class="movie__poster lazyload" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" />
   <div class="movie__info">
     <h3 class="movie__info__title">Information</h3>
     <h4>City</h4>
@@ -65,7 +65,7 @@ const createRestaurantItemTemplate = (restaurant) => `
     <div class="movie-item">
     <div class="movie-item__header">
     <img crossorigin="anonymous" class="movie-item__header__poster lazyload" alt="${restaurant.name}"
-        src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}">
+        data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}">
     <div class="movie-item__header__rating">
         <p>⭐️<span class="movie-item__header__rating__score">${restaurant.rating}</span></p>
     </div>
@@ -83,7 +83,7 @@ const createRestaurantItemTemplate = (restaurant) => `
 
 const createHeadlineRestaurant = (restaurant) => `
     <figure class="headline__figure">
-    <img tabindex="0" class="lazyload" crossorigin="anonymous" src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" />
+    <img tabindex="0" class="lazyload" crossorigin="anonymous" data-src="${CONFIG.BASE_IMAGE_URL + restaurant.pictureId}" alt="${restaurant.name}" />
     </figure>
     <div class="headline__content">
         <p tabindex="0" class="post-item__city">${restaurant.city}</p>

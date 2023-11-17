@@ -10,7 +10,8 @@
     "build-serve": "npm run build && npm run serve",
     "test": "jest --verbose",
     "test:watch": "jest --watchAll",
-    "e2e": "codeceptjs run --steps"
+    "e2e": "codeceptjs run --steps",
+    "lint": "eslint ./src"
   },
   "keywords": [],
   "author": "your_name <your.email@domain.com>",
